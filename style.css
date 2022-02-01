@@ -1,0 +1,126 @@
+/* variables */
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background: rgb(130, 170, 107);
+    padding: 2%;
+    min-height: 30vh;
+    min-width: 30vw;
+    width: auto;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 5%;
+}
+
+h3 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: inline-block;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* give some simple styling to our `input` tag */
+
+
+
+
+
+li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--todo-bg-color);
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+li .buttons {
+    min-width: 100px;
+    margin-left: auto;
+    display: inline;
+}
+
+li .buttons button {
+    background: none;
+    min-width: 40px;
+    border: none;
+    font-size: 2rem;
+}
+
+
+/* apply a different style to the completed tasks */
+
+.completed li {
+    background-color: var(--done-bg-color);
+}
+
+.completed .complete svg path {
+    fill: var(--svg-complete-color);
+}
+
+svg {
+    max-width: 25px;
+}
+
+
+/* define the normal color */
+
+svg path {
+    fill: var(--svg-normal-color);
+}
+
+
+/* change the color when we hover the icons*/
+
+button:hover svg path {
+    fill: var(--svg-hover-color);
+}
+
+
+/* make the remove icon red*/
+
+.remove svg path {
+    fill: var(--svg-remove-color);
+}
+
+
+/* make the remove icon a different color on hover */
+
+.remove:hover svg path {
+    fill: var(--svg-remove-hover-color);
+}
+
+input{
+    width: 400px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+button{
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+}
